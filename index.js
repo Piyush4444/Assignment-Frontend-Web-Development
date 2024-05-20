@@ -1,0 +1,1 @@
+window['webgl-fluid'].default(document.querySelector('canvas'));

@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #EEE5FF;
+    /* font-family: "Outfit", sans-serif; */
+    font-family: "Sora", sans-serif;
+    z-index: 10;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    height: 7vh;
+    width: 100vw;
+    background-color: #262626;
+    position: fixed;
+    z-index: 99;
+    overflow: hidden;
+
+    img {
+        height: 18px;
+        width: 152px;
+    }
+
+    .buyNow {
+        background-color: #7AA93C;
+        filter: drop-shadow(0px 0.7px 4px rgba(23, 63, 17, 0.722));
+    }
+
+    .buyNow:hover {
+        opacity: 0.90
+    }
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 80%;
+    z-index: 1;
+}
+
+.size {
+    height: 100vh;
+    width: 100%;
+}
+
+.section1 {
+    .wrapperMotionArt {
+        height: 20vh;
+        width: 100%;
+
+        .MotionArtEffect {
+            height: 100%;
+            width: 50%;
+
+            img {
+                height: 52px;
+                width: 220px;
+            }
+        }
+
+        .purchaseNow {
+            height: 100%;
+            width: 50%;
+
+            .purchaseNowBtn {
+                border: 2px solid #EEE5FF;
+                transition: all 130ms ease-in;
+            }
+
+            .purchaseNowBtn:hover {
+                background-color: transparent;
+                color: #EEE5FF;
+            }
+        }
+
+    }
+
+    .wrapperAttract {
+        height: 80%;
+
+        .Transform {
+            height: 100%;
+            width: 20%;
+            pointer-events: none;
+            padding-top: 5.5rem;
+        }
+
+        .Attract {
+            height: 100%;
+            width: 50%;
+
+            .attractYour p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .gradient {
+        background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+.section2 {
+    .wrapperTrusted {
+        height: 10vh;
+        width: 100%;
+    }
+
+    .wrapperreviews {
+        height: 30vh;
+        width: 100%;
+
+        .imgbg {
+            background-color: #0D061F;
+            border-radius: 50%
+        }
+    }
+
+    .wrapperTurnYourCursor {
+        height: 60vh;
+        width: 100%;
+
+        .textTurnYourCursor {
+            height: 100%;
+            width: 60%;
+
+            a {
+                height: 60px;
+                width: 350px;
+                background: linear-gradient(-90deg, #F87516 0%, #5E11FF 100%);
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .imgTurnYourCursor {
+            height: 100%;
+            width: 45%;
+        }
+    }
+}
+
+.section3 {
+    .wrapperApplyOn {
+        height: 30vh;
+        width: 60%;
+        line-height: 4rem;
+    }
+
+    .wrapperCards {
+        height: 85vh;
+        width: 100%;
+
+        .card1container {
+            height: 100%;
+            width: 50%;
+        }
+
+        .card2container {
+            height: 100%;
+            width: 50%;
+        }
+
+        .card {
+            max-height: 33vw;
+            max-width: 36vw;
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
+            filter: drop-shadow(0px 0.7px 4px rgba(48, 48, 48, 0.75));
+        }
+    }
+}
+
+.section4 {
+    height: 70vh;
+    width: 100%;
+
+    .supportedContent {
+        background-color: transparent;
+        background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
+        height: 50%;
+        width: 92%;
+        filter: drop-shadow(0px 0.7px 4px rgba(48, 48, 48, 0.75));
+
+        .browserimg {
+            width: 411px;
+        }
+    }
+}
+
+.section5 {
+
+
+    .wrapperSection5Cards {
+        height: 55%;
+        width: 100%;
+
+        .section5cards {
+            height: 92%;
+            width: 30%;
+            background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
+            filter: drop-shadow(0px 0.7px 4px rgba(48, 48, 48, 0.75));
+        }
+    }
+
+
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 8vh;
+    width: 135%;
+    margin-left: -20%;
+    background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
+    z-index: 100;
+
+}
+
+
+
+/* Some Style tweaks for Desktop View */
+@media screen and (min-width: 895px) {
+    .Attract {
+        margin: 1rem 0 0 2rem;
+    }
+
+    .wrapperTurnYourCursor {
+        padding: 2.5rem;
+    }
+
+    .textTurnYourCursor h1 {
+        line-height: 3.4rem;
+    }
+
+    .wrapperApplyOn {
+        align-items: end;
+        padding-bottom: 2rem;
+        min-height: 40vh;
+    }
+
+
+    .wrapperCards {
+        min-height: 85vh;
+        gap: 2rem;
+    }
+
+    .card1container {
+        justify-content: end;
+        align-items: start;
+    }
+
+    .section4 {
+        margin-top: 10rem;
+    }
+
+    .section4 h3 {
+        font-weight: 500;
+    }
+
+    .wrapperAnAllround {
+        width: 45%;
+    }
+
+    .wrapperAnAllround h1 {
+        line-height: 3.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .wrapperAnAllround p {
+        line-height: 1.9rem;
+    }
+
+    .footer {
+        padding: 0 15.6rem 0 15.6rem;
+    }
+}
+
+
+/* Smartphone Queries */
+
+@media screen and (max-width: 896px) {
+
+    /* section-1 : Motion Art */
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .purchaseNow {
+        display: none;
+        opacity: 0;
+        min-width: 0px;
+        min-height: 0px;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .MotionArtEffect {
+        min-width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .wrapperAttract {
+        flex-direction: column;
+    }
+
+    .Transform {
+        margin-top: 3rem;
+        min-width: 100%;
+        padding-top: 10vh;
+        justify-content: center;
+        text-align: center;
+        align-items: end;
+        max-height: 26%;
+    }
+
+
+    .transformText h4 {
+        width: 200px;
+        font-size: 1.05rem;
+    }
+
+
+    .WithMotion {
+        font-size: 0.9rem;
+    }
+
+    .Attract {
+
+        min-width: 100%;
+        justify-content: flex-start;
+        align-items: start;
+        padding: 0 0.5rem;
+    }
+
+    .attractYour {
+        align-items: center;
+    }
+
+    .attractYour h1 {
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 4rem;
+        font-weight: 500;
+    }
+
+    #MotionArt {
+        font-size: 2rem;
+    }
+
+    .attractYour p {
+        text-align: center;
+    }
+
+    /* section-2 : Trusted by thousands of users around the world  */
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapperTrusted {
+        margin-top: 25rem;
+        max-width: 90%;
+    }
+
+    .wrapperTrusted h3 {
+        text-align: center;
+    }
+
+    .reviewscontain {
+        margin-top: 4rem;
+        flex-direction: column;
+        min-height: 45vh;
+        gap: 2.2rem;
+    }
+
+    .wrapperTurnYourCursor {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15rem;
+    }
+
+    .textTurnYourCursor {
+        min-width: 90%;
+    }
+
+    .textTurnYourCursor h1 {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 2.9rem;
+    }
+
+    .textTurnYourCursor p {
+        text-align: center;
+        line-height: 1.8rem;
+    }
+
+    .textTurnYourCursorcontaint {
+        align-items: center;
+    }
+
+    .textTurnYourCursor a {
+        max-height: 65px;
+        max-width: 320px;
+    }
+
+    .imgTurnYourCursor {
+        margin-top: 1.6rem;
+        min-width: 80%;
+    }
+
+    /* section-3 : Apply On Any Section Or Enable For Whole Page */
+
+    .section3 {
+        margin-top: 35rem;
+        padding-top: 2rem;
+    }
+
+    .wrapperApplyOn {
+        min-width: 95%;
+        align-items: center;
+    }
+
+
+    .wrapperApplyOn h1 {
+        font-size: 1.4rem;
+        line-height: 3rem;
+    }
+
+    .wrapperCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1container,
+    .card2container {
+        min-width: 96%;
+        flex-direction: column;
+
+    }
+
+    .card2container {
+        margin-top: 2rem;
+    }
+
+    .card {
+        padding: 2rem;
+        min-height: 58vh;
+        min-width: 100%;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .card h2,
+    .card p {
+        text-align: center;
+    }
+
+    /* section-4 : Supported by All Popular Browsers */
+
+    .section4 {
+        margin-top: 14rem;
+        align-items: end;
+    }
+
+    .supportedContent {
+        text-align: center;
+        min-width: 95%;
+        min-height: 40vh;
+    }
+
+
+    /* section-5 An All-Round Plugin With Powerful Features */
+
+    .wrapperAnAllround {
+        width: 95%;
+    }
+
+    .wrapperAnAllround h1 {
+        font-size: 1.6rem;
+    }
+
+    .para {
+        padding: 0 1rem;
+    }
+
+    .wrapperSection5Cards {
+        min-height: 130vh;
+        flex-direction: column;
+    }
+
+    .section5cards {
+        min-width: 95%;
+    }
+
+    /* Footer */
+
+    .footer {
+        margin-top: 35rem;
+        background-color: #F87516;
+        min-height: 13vh;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Copywrite {
+        min-width: 80%;
+    }
+
+    .Copywrite p,
+    .h5 h5 {
+        font-family: "Outfit", sans-serif;
+        font-size: 0.85rem;
+        margin: 0 0 0.3rem 0.6rem;
+    }
+
+
+}
