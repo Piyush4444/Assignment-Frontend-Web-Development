@@ -184,6 +184,7 @@ canvas {
     .wrapperCards {
         height: 85vh;
         width: 100%;
+        gap: 1.2rem;
 
         .card1container {
             height: 100%;
@@ -196,11 +197,15 @@ canvas {
         }
 
         .card {
-            max-height: 33vw;
+            height: 28vw;
             max-width: 36vw;
             background-color: transparent;
             background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
             filter: drop-shadow(0px 0.7px 4px rgba(48, 48, 48, 0.75));
+        }
+
+        .card2 {
+            height: 30vw;
         }
     }
 }
@@ -254,7 +259,7 @@ footer {
 
 
 
-@media screen and (min-width: 895px) {
+@media screen and (min-width: 1500px) {
     /* * {
         scale: 1.02;
     } */
@@ -290,13 +295,8 @@ footer {
         margin-left: 6vw;
     }
 
-    .section2 {
-        /* background-color: #7AA93C; */
-
-    }
 
     .wrapperTrusted {
-        /* background-color: #5E11FF; */
         max-height: 5vh;
         width: 100%;
         padding-bottom: 3.5vw;
@@ -307,15 +307,70 @@ footer {
     }
 
     .reviewscontain {
-        scale: 1.2;
+        scale: 1.15;
     }
 
     .wrapperreviews {
         max-height: 25vh;
         width: 100%;
     }
-}
 
+    .textTurnYourCursor {
+        max-width: 55%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textTurnYourCursor h1 {
+        word-spacing: 0.5rem;
+        line-height: 3rem;
+
+    }
+
+    .section4 {
+        max-height: 70vh;
+        width: 100%;
+
+    }
+
+    .supportedContent {
+        min-width: 100%;
+    }
+
+    .supportedContent h3 {
+        font-size: 1.8rem;
+    }
+
+    .supportedContent p {
+        font-size: 1rem;
+    }
+
+    .supportedContent img {
+        scale: 1.1;
+    }
+
+    .section5 {
+        max-height: 70vh;
+    }
+
+    .wrapperAnAllroundContaint {
+        max-width: 50%;
+    }
+
+    .wrapperAnAllroundContaint h1 {
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+    }
+
+    .para {
+        max-width: 60%;
+        line-height: 1.8rem;
+    }
+
+
+
+}
 
 /* Some Style tweaks for Desktop View */
 @media screen and (max-width: 1024px) and (min-width: 895px) {
@@ -514,13 +569,14 @@ footer {
     /* section-3 : Apply On Any Section Or Enable For Whole Page */
 
     .section3 {
-        margin-top: 35rem;
+        margin-top: 40rem;
         padding-top: 2rem;
     }
 
     .wrapperApplyOn {
         min-width: 95%;
         align-items: center;
+        margin-bottom: 4.2rem;
     }
 
 
@@ -553,6 +609,10 @@ footer {
         align-items: start;
     }
 
+    .card2 {
+        min-height: 60vh;
+    }
+
     .card h2,
     .card p {
         text-align: center;
@@ -561,7 +621,7 @@ footer {
     /* section-4 : Supported by All Popular Browsers */
 
     .section4 {
-        margin-top: 14rem;
+        margin-top: 18rem;
         align-items: end;
     }
 
@@ -614,7 +674,7 @@ footer {
     .h5 h5 {
         font-family: "Outfit", sans-serif;
         font-size: 0.85rem;
-        margin: 0 0 0.3rem 0.6rem;
+        margin: 0 0 0.8rem 0.6rem;
     }
 
 
