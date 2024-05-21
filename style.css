@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap');
 
 * {
@@ -13,6 +17,7 @@
 html,
 body {
     overflow-x: hidden;
+    /* background-color: #1a191e; */
 }
 
 nav {
@@ -244,8 +249,36 @@ footer {
 
 
 
-/* Some Style tweaks for Desktop View */
+
 @media screen and (min-width: 895px) {
+    .wrapper {
+        max-width: 65%;
+        z-index: 1;
+    }
+
+    .wrapperMotionArt img {
+        height: 52px;
+        width: 220px;
+    }
+
+    .Transform {
+        max-height: 50%;
+        max-width: 17%;
+        margin-top: 2vw;
+    }
+
+    .Attract {
+        height: 100%;
+        max-width: 49%;
+        align-items: start;
+        padding-top: 6vw;
+        margin-left: 6vw;
+    }
+}
+
+
+/* Some Style tweaks for Desktop View */
+@media screen and (max-width: 1024px) and (min-width: 895px) {
     .Attract {
         margin: 1rem 0 0 2rem;
     }
@@ -300,7 +333,6 @@ footer {
         padding: 0 15.6rem 0 15.6rem;
     }
 }
-
 
 /* Smartphone Queries */
 
