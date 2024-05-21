@@ -197,16 +197,13 @@ canvas {
         }
 
         .card {
-            height: 28vw;
+            height: 85%;
             max-width: 36vw;
             background-color: transparent;
             background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
             filter: drop-shadow(0px 0.7px 4px rgba(48, 48, 48, 0.75));
         }
 
-        .card2 {
-            height: 30vw;
-        }
     }
 }
 
@@ -259,7 +256,7 @@ footer {
 
 /* Large Display Queries */
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1700px) {
     nav {
         padding: 0 7vw 0 3vw;
     }
@@ -385,60 +382,76 @@ footer {
     }
 }
 
-/* Some Style tweaks for Desktop View */
-@media screen and (max-width: 1024px) and (min-width: 895px) {
-    .Attract {
-        margin: 1rem 0 0 2rem;
-    }
+/* Some Style tweaks for Laptop View */
+@media screen and (min-width: 1500px) and (max-width: 1699px) {
+    .wrapperAttract {
+        height: 80%;
+        overflow: hidden;
 
-    .wrapperTurnYourCursor {
-        padding: 2.5rem;
-    }
+        .Transform {
+            max-width: 25%;
+            margin-top: 1.2rem;
 
-    .textTurnYourCursor h1 {
-        line-height: 3.4rem;
-    }
+        }
 
-    .wrapperApplyOn {
-        align-items: end;
-        padding-bottom: 2rem;
-        min-height: 40vh;
+        .Attract {
+            min-width: 55%;
+            padding-top: 5vw;
+            padding-left: 5rem;
+        }
     }
-
 
     .wrapperCards {
-        min-height: 85vh;
-        gap: 2rem;
+        min-height: 90vh;
     }
 
-    .card1container {
-        justify-content: end;
-        align-items: start;
+
+    .wrapperApplyOn {
+        min-height: 30%;
     }
 
-    .section4 {
-        margin-top: 10rem;
+    .section5 {
+        max-height: 95vh;
     }
 
-    .section4 h3 {
-        font-weight: 500;
+    .section5cards {
+        max-height: 83%;
     }
 
-    .wrapperAnAllround {
-        width: 45%;
+    .wrapperAnAllroundContaint {
+        max-width: 50%;
     }
 
-    .wrapperAnAllround h1 {
-        line-height: 3.6rem;
-        margin-bottom: 1.5rem;
+    .para {
+        max-width: 60%;
+        line-height: 1.8rem;
     }
 
-    .wrapperAnAllround p {
-        line-height: 1.9rem;
+    .para {
+        max-width: 60%;
+        line-height: 1.8rem;
     }
 
-    .footer {
-        padding: 0 15.6rem 0 15.6rem;
+    .wrapperAnAllroundContaint h1 {
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+    }
+
+
+    footer {
+        max-height: 7vh;
+        min-width: 160%;
+        margin-left: -30%;
+        padding: 0 25rem 0.5rem 23rem;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+
+    }
+
+    footer p {
+        font-size: 1rem;
     }
 }
 
@@ -648,6 +661,7 @@ footer {
     /* section-5 An All-Round Plugin With Powerful Features */
 
     .wrapperAnAllround {
+        padding-top: 5rem;
         width: 95%;
     }
 
@@ -671,8 +685,7 @@ footer {
     /* Footer */
 
     .footer {
-        margin-top: 35rem;
-        background-color: #F87516;
+        margin-top: 38rem;
         min-height: 13vh;
         flex-direction: column-reverse;
         text-align: center;

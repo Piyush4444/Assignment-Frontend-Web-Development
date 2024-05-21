@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link href="./output.css" rel="stylesheet" /> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -41,7 +41,7 @@
           <!-- MotionArtEffect-logo -->
           <div class="wrapperMotionArt flex">
             <div class="MotionArtEffect flex justify-start items-end px-4">
-              <a href="#">
+              <a href="./index.html">
                 <img src="MotionArtEffect-logo.png" alt="MotionArt Effect" />
               </a>
             </div>
@@ -317,6 +317,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script type="module" src="webgl-fluid.umd.min.js"></script>
-    <script type="module" src="index.js"></script>
+    <script type="module">
+      window["webgl-fluid"].default(document.querySelector("canvas"));
+    </script>
   </body>
 </html>
