@@ -17,7 +17,7 @@
 html,
 body {
     overflow-x: hidden;
-    background-color: #1a191e;
+    /* background-color: #1a191e; */
 }
 
 nav {
@@ -27,6 +27,7 @@ nav {
     position: fixed;
     z-index: 99;
     overflow: hidden;
+    padding: 0 1.25rem;
 
     img {
         height: 18px;
@@ -49,13 +50,15 @@ main {
 }
 
 canvas {
-    width: 100vw;
+    margin-right: 10vw;
+    width: 130vw;
     height: 100vh;
     position: fixed;
     inset: 0;
     z-index: 1;
     opacity: 1;
     pointer-events: all;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -252,14 +255,21 @@ footer {
 
 
 @media screen and (min-width: 895px) {
-    * {
+    /* * {
         scale: 1.02;
+    } */
+
+    nav {
+        padding: 0 7vw 0 3vw;
     }
+
 
     .wrapper {
         max-width: 65%;
         z-index: 1;
     }
+
+
 
     .wrapperMotionArt img {
         height: 52px;
@@ -269,14 +279,14 @@ footer {
     .Transform {
         max-height: 50%;
         max-width: 17%;
-        margin-top: 2vw;
+        margin-top: 4vw;
     }
 
     .Attract {
         height: 100%;
         max-width: 49%;
         align-items: start;
-        padding-top: 6vw;
+        padding-top: 8vw;
         margin-left: 6vw;
     }
 
@@ -289,8 +299,20 @@ footer {
         /* background-color: #5E11FF; */
         max-height: 5vh;
         width: 100%;
+        padding-bottom: 3.5vw;
+    }
 
+    .wrapperTrusted h3 {
+        font-size: 1.5rem;
+    }
 
+    .reviewscontain {
+        scale: 1.2;
+    }
+
+    .wrapperreviews {
+        max-height: 25vh;
+        width: 100%;
     }
 }
 
