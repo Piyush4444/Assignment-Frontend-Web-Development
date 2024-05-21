@@ -17,7 +17,7 @@
 html,
 body {
     overflow-x: hidden;
-    /* background-color: #1a191e; */
+    background-color: #1a191e;
 }
 
 nav {
@@ -132,6 +132,7 @@ canvas {
     .wrapperTrusted {
         height: 10vh;
         width: 100%;
+        align-items: end;
     }
 
     .wrapperreviews {
@@ -251,6 +252,10 @@ footer {
 
 
 @media screen and (min-width: 895px) {
+    * {
+        scale: 1.02;
+    }
+
     .wrapper {
         max-width: 65%;
         z-index: 1;
@@ -273,6 +278,19 @@ footer {
         align-items: start;
         padding-top: 6vw;
         margin-left: 6vw;
+    }
+
+    .section2 {
+        /* background-color: #7AA93C; */
+
+    }
+
+    .wrapperTrusted {
+        /* background-color: #5E11FF; */
+        max-height: 5vh;
+        width: 100%;
+
+
     }
 }
 
