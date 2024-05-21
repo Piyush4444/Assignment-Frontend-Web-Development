@@ -257,24 +257,17 @@ footer {
 }
 
 
-
+/* Large Display Queries */
 
 @media screen and (min-width: 1500px) {
-    /* * {
-        scale: 1.02;
-    } */
-
     nav {
         padding: 0 7vw 0 3vw;
     }
-
 
     .wrapper {
         max-width: 65%;
         z-index: 1;
     }
-
-
 
     .wrapperMotionArt img {
         height: 52px;
@@ -294,7 +287,6 @@ footer {
         padding-top: 8vw;
         margin-left: 6vw;
     }
-
 
     .wrapperTrusted {
         max-height: 5vh;
@@ -351,7 +343,11 @@ footer {
     }
 
     .section5 {
-        max-height: 70vh;
+        max-height: 85vh;
+    }
+
+    .section5cards {
+        max-height: 83%;
     }
 
     .wrapperAnAllroundContaint {
@@ -368,8 +364,25 @@ footer {
         line-height: 1.8rem;
     }
 
+    .section5cards img {
+        margin-top: 1rem;
+    }
 
 
+    footer {
+        max-height: 5vh;
+        min-width: 160%;
+        margin-left: -30%;
+        padding: 0 25rem 0 23rem;
+    }
+
+    footer h5 {
+        font-size: 0.85rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
 }
 
 /* Some Style tweaks for Desktop View */
